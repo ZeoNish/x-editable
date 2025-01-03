@@ -1,5 +1,5 @@
 # X-editable
-In-place editing with Twitter Bootstrap, jQuery UI or pure jQuery.  
+Редактирование на месте с помощью Twitter Bootstrap, пользовательского интерфейса jQuery или чистого jQuery.
 
 ## Live Demo
 **http://vitalets.github.io/x-editable/demo.html**
