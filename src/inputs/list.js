@@ -186,7 +186,7 @@ List - abstract class for inputs that have source option loaded from js array or
                 
                 //convert prepend from string to object
                 if (typeof this.options.prepend === 'string') {
-                    this.options.prepend = {'': this.options.prepend};
+                    this.options.prepend = {'0': this.options.prepend};
                 }
                 
                 this.prependData = this.makeArray(this.options.prepend);
