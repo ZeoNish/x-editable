@@ -1,5 +1,5 @@
 # X-editable
-In-place editing with Twitter Bootstrap, jQuery UI or pure jQuery.  
+Редактирование на месте с помощью Twitter Bootstrap, пользовательского интерфейса jQuery или чистого jQuery.
 
 ## Live Demo
 **http://vitalets.github.io/x-editable/demo.html**
@@ -9,7 +9,7 @@ Please submit all Pull Requests to the `develop` branch: https://github.com/vita
 More details are in [CONTRIBUTING.md](/CONTRIBUTING.md).
 
 ## Issue Tracker
-Please report all issues here:  https://github.com/vitalets/x-editable/issues
+Пожалуйста, сообщайте обо всех проблемах здесь:  https://github.com/vitalets/x-editable/issues
 
 ## User Support
 Unfortunately, due to this project being supported by volunteers we cannot provide user support at this time. Please try a site like Stack Overflow:  http://stackoverflow.com/questions/tagged/x-editable
