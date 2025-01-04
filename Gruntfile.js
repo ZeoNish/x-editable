@@ -298,7 +298,8 @@ module.exports = function (grunt) {
                     jQuery: true
                 },
             },
-            js: ['Gruntfile.js',
+            js: [
+                'Gruntfile.js',
                 'src/editable-form/*.js',
                 'src/containers/*.js',
                 'src/element/*.js',
@@ -317,8 +318,8 @@ module.exports = function (grunt) {
         copy: {
             dist: {
                 files: [
-                    //image
-                    {expand: true, flatten: true, dest: '<%= dist %>/bootstrap5-editable/img/', src: 'src/img/*'},
+                    //images
+                    // {expand: true, flatten: true, dest: '<%= dist %>/bootstrap5-editable/img/', src: 'src/img/*'},
                     {expand: true, flatten: true, dest: '<%= dist %>/bootstrap4-editable/img/', src: 'src/img/*'},
                     {expand: true, flatten: true, dest: '<%= dist %>/bootstrap3-editable/img/', src: 'src/img/*'},
                     {expand: true, flatten: true, dest: '<%= dist %>/bootstrap-editable/img/', src: 'src/img/*'},
@@ -333,6 +334,12 @@ module.exports = function (grunt) {
                     }
                 ]
             },
+            // inputs: {
+            //     expand: true,
+            //     cwd: 'src/inputs',
+            //     src: '**',
+            //     dest: '<%= dist %>/inputs/'
+            // },
             inputs_ext: {
                 expand: true,
                 cwd: 'src/inputs-ext',
@@ -353,7 +360,7 @@ module.exports = function (grunt) {
         }
     });
 
-    //test task
+    //test task - Тесты
     grunt.registerTask('test', ['jshint', 'connect', 'qunit:bootstrap2']);
     grunt.registerTask('test3', ['jshint', 'connect', 'qunit:bootstrap3']);
     grunt.registerTask('test-bs4', ['jshint', 'connect', 'qunit:bootstrap4']);
