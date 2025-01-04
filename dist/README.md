@@ -55,6 +55,19 @@ jQuery only build:
 <script src="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/jquery-editable/js/jquery-editable-poshytip.min.js"></script>
 ````
 
+## Установить grunt глобально
+```
+npm install -g grunt
+```
+
+## Пользовательская сборка
+```
+grunt debug
+```
+### Сборка релиза
+```
+grunt build
+```
 
 ## Reporting issues
 Please **provide jsFiddle** when creating issues!   
