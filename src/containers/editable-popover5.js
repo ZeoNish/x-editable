@@ -1,8 +1,13 @@
 /**
  * Editable Popover for Bootstrap 5 based on Popper.js
+ * ПЕРЕДЕЛАТЬ!
  * ---------------------
- * requires bootstrap.bundle.js
+ * requires bootstrap-popover.js
+ *
  */
+
+/* global bootstrap */
+
 (function ($) {
     "use strict";
 
@@ -11,9 +16,9 @@
         containerName: 'popover',
         containerDataName: 'bs.popover',
         innerCss: '.popover-body',
-        defaults: $.fn.Popover.Default,
+        defaults: bootstrap.Popover.Default,
 
-        initContainer: function() {
+        initContainer: function () {
             $.extend(this.containerOptions, {
                 trigger: 'manual',
                 selector: false,
@@ -47,20 +52,29 @@
         },
 
         /* destroy */
-        innerDestroy: function() {
+        innerDestroy: function () {
             this.call('dispose');
         },
 
-        setContainerOption: function(key, value) {
-            this.container()._config[key] = value; // Updated for Bootstrap 5
+        setContainerOption: function (key, value) {
+            this.container().options[key] = value;
         },
 
         setPosition: function () {
-            this.container().update(); // Updated for Bootstrap 5
+            (function () {
+            }).call(this.container());
         },
 
-        tip: function() {
-            return this.container() ? $(this.container().getTipElement()) : null; // Updated for Bootstrap 5
+        call: function () {
+            if (!$(this.$element).data(this.containerDataName)) {
+                $(this.$element).data(this.containerDataName, bootstrap[this.containerName.replace(this.containerName[0], this.containerName[0].toUpperCase())].getOrCreateInstance(this.$element, this.containerOptions));
+            }
+
+            return this.$element[this.containerName].apply(this.$element, arguments);
+        },
+
+        tip: function () {
+            return this.container() ? $(this.container().tip) : null;
         }
     });
 
