@@ -71,7 +71,7 @@ function getFiles() {
         },
         bootstrap5: {
             filePrefix: 'bootstrap', //to have bootstrap-editable.js instead of bootstrap4-editable
-            form: [forms + 'editable-form-bootstrap5.js'],
+            form: [forms + 'editable-form-bootstrap4.js'],
             container: [containers + 'editable-popover5.js'],
             inputs: [
                 inputs + 'date/bootstrap-datepicker/js/bootstrap-datepicker.js',
