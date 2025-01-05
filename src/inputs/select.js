@@ -46,9 +46,6 @@
                             if (data[i].disabled) {
                                 attr.disabled = true;
                             }
-                            // if (attr.value === '') {
-                            //     attr.selected = true;
-                            // }
                             var $option = $('<option>', attr);
                             $option[escape ? 'text' : 'html'](data[i].text);
                             $el.append($option);
