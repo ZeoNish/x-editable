@@ -52,10 +52,10 @@ Editableform based on Twitter Bootstrap 3
     //buttons
     $.fn.editableform.buttons =
         '<button type="submit" class="btn btn-success btn-sm editable-submit">' +
-        '<i class="fa fa-check" aria-hidden="true"></i>' +
+        '<i class="feather-check" aria-hidden="true"></i>' +
         '</button>' +
         '<button type="button" class="btn btn-danger btn-sm editable-cancel">' +
-        '<i class="fa fa-times" aria-hidden="true"></i>' +
+        '<i class="feather-x" aria-hidden="true"></i>' +
         '</button>';
 
     //error classes

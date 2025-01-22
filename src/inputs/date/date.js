@@ -57,8 +57,8 @@ $(function(){
                 format: this.options.viewformat
             });
             
-            //language
-            this.options.datepicker.language = this.options.datepicker.language || 'en'; 
+            //Язык
+            this.options.datepicker.language = this.options.datepicker.language || 'ru';
 
             //store DPglobal
             this.dpg = $.fn.bdatepicker.DPGlobal; 
@@ -208,7 +208,7 @@ $(function(){
         }
         **/
         datepicker:{
-            weekStart: 0,
+            weekStart: 1,
             startView: 0,
             minViewMode: 0,
             autoclose: false

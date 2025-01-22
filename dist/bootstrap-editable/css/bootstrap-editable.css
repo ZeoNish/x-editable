@@ -295,6 +295,26 @@ a.editable-click.editable-disabled:hover {
     display: block;
 }
 
+.datepicker div.datepicker-days {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.datepicker div.datepicker-days .table-condensed {
+    width: 100%;
+}
+
+
+.datepicker div.datepicker-days .table-condensed .feather-chevron-left,
+.datepicker div.datepicker-days .table-condensed .feather-chevron-right {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    vertical-align: middle;
+}
+
 .datepicker.months div.datepicker-months {
     display: block;
 }
